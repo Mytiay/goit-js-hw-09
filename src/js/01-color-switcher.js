@@ -11,19 +11,22 @@ function getRandomHexColor() {
 refs.start.addEventListener('click', startBgChange);
 refs.stop.addEventListener('click', stopBgChange);
 
+let intervalId = 0;
 
 function startBgChange() {
     onChangeBgk();
     refs.stop.disabled = false;
-    refs.stop.disabled = true;
+    refs.start.disabled = true;
     setInterval(() => {
     onChangeBgk();
     }, 1000);
-    
+    intervalId = intervalId + 1;
 };
 
 function stopBgChange() {
-    clearInterval(1);
+    refs.stop.disabled = true;
+    refs.start.disabled = false
+    clearInterval(intervalId);
 };
 
 function onChangeBgk() {
