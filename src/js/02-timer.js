@@ -1,6 +1,9 @@
 import flatpickr from "flatpickr";
 import 'flatpickr/dist/flatpickr.min.css';
+
 const styleForField = document.querySelectorAll('.field');
+const buttonStart = document.querySelector('button');
+buttonStart.disabled = true;
 
 document.querySelector('.timer').style.display = 'flex';
 
