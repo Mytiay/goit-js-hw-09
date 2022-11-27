@@ -1,13 +1,13 @@
 import { Notify } from 'notiflix';
 
 const refs = {
-  formPromis: document.querySelector('.form'),
+  form: document.querySelector('.form'),
   delay: document.querySelector('[name="delay"]'),
   step: document.querySelector('[name="step"]'),
   amount: document.querySelector('[name="amount"]'),
 };
 
-refs.formPromis.addEventListener('submit', onButtonSubmit);
+refs.form.addEventListener('submit', onButtonSubmit);
 
 function onButtonSubmit(e) {
   e.preventDefault();
