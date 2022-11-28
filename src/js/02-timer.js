@@ -63,8 +63,6 @@ const counter = {
         clearInterval(this.intervalId);
         Notiflix.Report.success(
           'Done!!!',
-          'qweqweqwe',
-          'ok',
           function reloadPage() {
             window.location.reload();
           }
