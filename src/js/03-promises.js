@@ -16,6 +16,7 @@ function onButtonSubmit(e) {
     Number(refs.step.value),
     Number(refs.amount.value)
   );
+  e.currentTarget.reset();
 }
 
 function createPromises(delay, step, amount) {
